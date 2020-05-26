@@ -11,7 +11,7 @@ interface Auditable
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
-    public function audits(): MorphMany;
+    public function laravelaudits(): MorphMany;
 
     /**
      * Set the Audit event.

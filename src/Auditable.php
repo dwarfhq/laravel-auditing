@@ -54,7 +54,7 @@ trait Auditable
     /**
      * {@inheritdoc}
      */
-    public function audits(): MorphMany
+    public function laravelaudits(): MorphMany
     {
         return $this->morphMany(
             Config::get('audit.implementation', Models\Audit::class),

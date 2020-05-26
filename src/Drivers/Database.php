@@ -25,14 +25,14 @@ class Database implements AuditDriver
     public function prune(Auditable $model): bool
     {
         if (($threshold = $model->getAuditThreshold()) > 0) {
-            $forRemoval = $model->audits()
+            $forRemoval = $model->laravelaudits()
                 ->latest()
                 ->get()
                 ->slice($threshold)
                 ->pluck('id');
 
             if (!$forRemoval->isEmpty()) {
-                return $model->audits()
+                return $model->laravelaudits()
                     ->whereIn('id', $forRemoval)
                     ->delete() > 0;
             }
