@@ -12,7 +12,7 @@ class Database implements AuditDriver
     /**
      * {@inheritdoc}
      */
-    public function audit(Auditable $model): Audit
+    public function laravelaudit(Auditable $model): Laravelaudit
     {
         $implementation = Config::get('audit.implementation', \OwenIt\Auditing\Models\Laravelaudit::class);
 

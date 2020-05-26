@@ -66,7 +66,7 @@ class Auditor extends Manager implements Contracts\Auditor
             return;
         }
 
-        if ($audit = $driver->audit($model)) {
+        if ($audit = $driver->laravelaudit($model)) {
             $driver->prune($model);
         }
 
