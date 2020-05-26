@@ -954,7 +954,7 @@ class AuditableTest extends AuditingTestCase
         $this->expectException(AuditableTransitionException::class);
         $this->expectExceptionMessage('Expected Auditable id 2, got 1 instead');
 
-        $firstAudit = factory(Article::class)->create()->audits()->first();
+        $firstAudit = factory(Article::class)->create()->laravelaudits()->first();
         $secondModel = factory(Article::class)->create();
 
         $secondModel->transitionTo($firstAudit);

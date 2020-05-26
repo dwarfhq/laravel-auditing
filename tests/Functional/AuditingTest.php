@@ -274,7 +274,7 @@ class AuditingTest extends AuditingTestCase
             ]);
         }
 
-        $this->assertSame(100, $article->audits()->count());
+        $this->assertSame(100, $article->laravelaudits()->count());
     }
 
     /**
@@ -297,7 +297,7 @@ class AuditingTest extends AuditingTestCase
             ]);
         }
 
-        $this->assertSame(10, $article->audits()->count());
+        $this->assertSame(10, $article->laravelaudits()->count());
     }
 
     /**
