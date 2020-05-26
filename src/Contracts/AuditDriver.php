@@ -9,9 +9,9 @@ interface AuditDriver
      *
      * @param \OwenIt\Auditing\Contracts\Auditable $model
      *
-     * @return \OwenIt\Auditing\Contracts\Audit
+     * @return \OwenIt\Auditing\Contracts\Laravelaudit
      */
-    public function audit(Auditable $model): Audit;
+    public function audit(Auditable $model): Laravelaudit;
 
     /**
      * Remove older audits that go over the threshold.

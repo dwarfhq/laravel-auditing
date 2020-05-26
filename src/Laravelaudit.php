@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Database\Eloquent\Model;
 use OwenIt\Auditing\Contracts\AttributeEncoder;
 
-trait Audit
+trait Laravelaudit
 {
     /**
      * Audit data.

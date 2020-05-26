@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use DateTimeInterface;
 use Illuminate\Foundation\Testing\Assert;
 use OwenIt\Auditing\Encoders\Base64Encoder;
-use OwenIt\Auditing\Models\Audit;
+use OwenIt\Auditing\Models\Laravelaudit;
 use OwenIt\Auditing\Redactors\LeftRedactor;
 use OwenIt\Auditing\Tests\Models\Article;
 use OwenIt\Auditing\Tests\Models\User;

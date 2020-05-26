@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Event;
 use InvalidArgumentException;
 use OwenIt\Auditing\Events\Auditing;
 use OwenIt\Auditing\Exceptions\AuditingException;
-use OwenIt\Auditing\Models\Audit;
+use OwenIt\Auditing\Models\Laravelaudit;
 use OwenIt\Auditing\Tests\AuditingTestCase;
 use OwenIt\Auditing\Tests\Models\Article;
 use OwenIt\Auditing\Tests\Models\User;

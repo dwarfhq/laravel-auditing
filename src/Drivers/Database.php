@@ -3,7 +3,7 @@
 namespace OwenIt\Auditing\Drivers;
 
 use Illuminate\Support\Facades\Config;
-use OwenIt\Auditing\Contracts\Audit;
+use OwenIt\Auditing\Contracts\Laravelaudit;
 use OwenIt\Auditing\Contracts\Auditable;
 use OwenIt\Auditing\Contracts\AuditDriver;
 
@@ -14,7 +14,7 @@ class Database implements AuditDriver
      */
     public function audit(Auditable $model): Audit
     {
-        $implementation = Config::get('audit.implementation', \OwenIt\Auditing\Models\Audit::class);
+        $implementation = Config::get('audit.implementation', \OwenIt\Auditing\Models\Laravelaudit::class);
 
         return call_user_func([$implementation, 'create'], $model->toAudit());
     }

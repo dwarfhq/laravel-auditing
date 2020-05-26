@@ -4,9 +4,9 @@ namespace OwenIt\Auditing\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Audit extends Model implements \OwenIt\Auditing\Contracts\Audit
+class Laravelaudit extends Model implements \OwenIt\Auditing\Contracts\Audit
 {
-    use \OwenIt\Auditing\Audit;
+    use \OwenIt\Auditing\Laravelaudit;
 
     /**
      * {@inheritdoc}

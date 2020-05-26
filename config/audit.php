@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'implementation' => OwenIt\Auditing\Models\Audit::class,
+    'implementation' => OwenIt\Auditing\Models\Laravelaudit::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -119,7 +119,7 @@ return [
 
     'drivers' => [
         'database' => [
-            'table'      => 'audits',
+            'table'      => 'laravelaudits',
             'connection' => null,
         ],
     ],

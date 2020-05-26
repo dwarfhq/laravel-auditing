@@ -2,7 +2,7 @@
 
 namespace OwenIt\Auditing\Contracts;
 
-interface Audit
+interface Laravelaudit
 {
     /**
      * Get the current connection name for the model.

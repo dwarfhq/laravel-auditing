@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use OwenIt\Auditing\Contracts\Audit;
+use OwenIt\Auditing\Contracts\Laravelaudit;
 use OwenIt\Auditing\Contracts\Auditable;
 use OwenIt\Auditing\Contracts\AuditDriver;
 
@@ -13,9 +13,9 @@ class DummyClass implements AuditDriver
      *
      * @param \OwenIt\Auditing\Contracts\Auditable $model
      *
-     * @return \OwenIt\Auditing\Contracts\Audit
+     * @return \OwenIt\Auditing\Contracts\Laravelaudit
      */
-    public function audit(Auditable $model): Audit
+    public function laravelaudit(Auditable $model): Laravelaudit
     {
         // TODO: Implement the audit logic
     }
